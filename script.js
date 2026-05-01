@@ -7,7 +7,8 @@ const selectBox = document.querySelector(".select-box"),
     allBox = document.querySelectorAll("section span"),
     resultBox = document.querySelector(".result-box"),
     wonText = resultBox.querySelector(".won-text"),
-    replayBtn = resultBox.querySelector("button");
+    replayBtn = resultBox.querySelector(".btn button");
+    exitBtn = resultBox.querySelector(".btnex button");
 
 // Variables for player icons and game state
 let playerXIcon = "fas fa-times"; // FontAwesome icon class for 'X'
@@ -128,7 +129,6 @@ replayBtn.onclick = () => {
 };
 
 // Exit button click event
-const exitBtn = document.querySelector(".btnex button");
 exitBtn.onclick = () => {
-    window.close(); // Close the window
+    window.location.href= 'preGame.html'; // Goes back to the pregame screen
 };
